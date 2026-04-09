@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chillies Restaurant – Fine Dining in Perinthalmanna, Kerala</title>
+  <meta name="description" content="Experience the finest multi-cuisine dining at Chillies, Perinthalmanna. Kerala delicacies, biryanis, grills & more. Open 9 AM – 1 AM daily." />
+  <meta property="og:title" content="Chillies Restaurant – Perinthalmanna, Kerala" />
+  <meta property="og:description" content="All-day fine dining with authentic Kerala cuisine, biryanis, grills and more. Rated 4.5★ by 7,500+ guests." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <!-- Brand logo: circle ring + horizontal chili with Chilies text -->
+        <div class="logo-mark">
+          <svg viewBox="0 0 72 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg" style="width:72px;height:auto">
+            <!-- Outer ring -->
+            <circle cx="36" cy="26" r="23" stroke="#F5C518" stroke-width="3"/>
+            <!-- Chili body crossing the ring, tapering from left -->
+            <path d="M6 26 C10 20 18 18 28 20 L52 22 C58 22.5 63 24 65 26 C63 28 58 29.5 52 30 L28 32 C18 34 10 32 6 26Z" fill="#F5C518"/>
+            <!-- Chili tip / curl at right -->
+            <path d="M65 26 C68 25 70 24 70 22 C70 20 68 19 66 20" stroke="#F5C518" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- Stem at left -->
+            <path d="M6 26 C4 24 2 22 3 20" stroke="#F5C518" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <!-- "Chilies" text on chili body -->
+            <text x="36" y="30" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="9.5" fill="#0b0f1a" letter-spacing="0.5">Chilies</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">CHILLIES</span>
+          <span class="logo-tagline">Perinthalmanna</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reserve" class="nav-link">Reserve</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav-actions">
+        <a href="tel:+917594888802" class="btn-nav-cta" id="nav-call-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 .18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z" transform="translate(1,1)"/></svg>
+          Call Now
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#reserve" class="mobile-nav-link">Reserve</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="tel:+917594888802" class="mobile-nav-cta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 .18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z" transform="translate(1,1)"/></svg>
+            Call Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="Chillies Restaurant food spread" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-particles" id="hero-particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge fade-up delay-1">
+        <span class="badge-dot"></span>
+        Open Now · 9 AM – 1 AM
+      </div>
+
+      <h1 class="hero-title fade-up delay-2">
+        <span class="hero-title-line">Where Every Bite</span>
+        <span class="hero-title-line accent-text">Tells a Story</span>
+      </h1>
+
+      <p class="hero-subtitle fade-up delay-3">
+        Multi-cuisine fine dining in the heart of Perinthalmanna — Kerala delicacies, succulent biryanis, smoky grills & vibrant flavours from across India and Arabia.
+      </p>
+
+      <div class="hero-ctas fade-up delay-4">
+        <a href="tel:+917594888802" class="btn-primary" id="hero-call-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 .18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z" transform="translate(1,1)"/></svg>
+          Call Now
+        </a>
+        <a href="#reserve" class="btn-secondary" id="hero-reserve-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Reserve a Table
+        </a>
+      </div>
+
+      <!-- Social Proof Stats -->
+      <div class="hero-stats fade-up delay-5">
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="count-up" data-target="4.5" data-decimal="1" data-suffix="★">0</span>
+          </div>
+          <div class="stat-label">Rating</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="count-up" data-target="7500" data-suffix="+">0</span>
+          </div>
+          <div class="stat-label">Happy Reviews</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value">
+            <span class="count-up" data-target="15" data-suffix="+">0</span>
+          </div>
+          <div class="stat-label">Years Serving</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ TICKER ═══════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>Kerala Biryani</span><span class="ticker-dot">✦</span>
+      <span>Chicken Nirvana</span><span class="ticker-dot">✦</span>
+      <span>Fish Pollichathu</span><span class="ticker-dot">✦</span>
+      <span>Chatti Choru</span><span class="ticker-dot">✦</span>
+      <span>Broasted Chicken</span><span class="ticker-dot">✦</span>
+      <span>Dragon Chicken</span><span class="ticker-dot">✦</span>
+      <span>Paal Kappa</span><span class="ticker-dot">✦</span>
+      <span>Tandoori Specials</span><span class="ticker-dot">✦</span>
+      <span>Arabian Delights</span><span class="ticker-dot">✦</span>
+      <span>Kerala Seafood</span><span class="ticker-dot">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Kerala Biryani</span><span class="ticker-dot">✦</span>
+      <span>Chicken Nirvana</span><span class="ticker-dot">✦</span>
+      <span>Fish Pollichathu</span><span class="ticker-dot">✦</span>
+      <span>Chatti Choru</span><span class="ticker-dot">✦</span>
+      <span>Broasted Chicken</span><span class="ticker-dot">✦</span>
+      <span>Dragon Chicken</span><span class="ticker-dot">✦</span>
+      <span>Paal Kappa</span><span class="ticker-dot">✦</span>
+      <span>Tandoori Specials</span><span class="ticker-dot">✦</span>
+      <span>Arabian Delights</span><span class="ticker-dot">✦</span>
+      <span>Kerala Seafood</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-image-frame">
+            <img src="images/kerala_meal.png" alt="Kerala traditional meal" class="about-img" />
+            <!-- Badge constrained inside the frame to prevent overflow -->
+            <div class="about-badge-float">
+              <span class="float-icon">🌶️</span>
+              <span>Since 2009</span>
+            </div>
+          </div>
+          <div class="about-accent-card">
+            <div class="accent-stat">
+              <strong>9 AM</strong>
+              <span>Open</span>
+            </div>
+            <div class="accent-dash">—</div>
+            <div class="accent-stat">
+              <strong>1 AM</strong>
+              <span>Close</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">A Culinary Journey <br/><em>Through Kerala & Beyond</em></h2>
+          <p class="about-text">
+            Nestled along Ooty Road at Manathumangalam Bypass, Chillies has been Perinthalmanna's crown jewel of dining since its inception. What began as a humble vision to serve authentic Kerala flavours has grown into the region's most beloved multi-cuisine experience.
+          </p>
+          <p class="about-text">
+            From the soulful aromas of Chatti Choru served in traditional clay ware, to the sizzling perfection of our Broasted Chicken and the aromatic layers of our signature Biryanis — every dish is a testament to our commitment to quality, tradition, and bold flavour.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              All-Day Dining
+            </div>
+            <div class="feature-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              Family Friendly
+            </div>
+            <div class="feature-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              Multi-Cuisine
+            </div>
+            <div class="feature-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+              Dine-In & Takeaway
+            </div>
+          </div>
+
+          <a href="#reserve" class="btn-primary" id="about-reserve-btn">Reserve Your Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EXPERIENCE FEATURES ═══════════ -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Why Chillies</div>
+        <h2 class="section-title">The Complete Dining <em>Experience</em></h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal-up delay-1">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="#F5C518" stroke-width="1.5" fill="none"/>
+              <path d="M20 44 Q32 20 44 44" stroke="#F5C518" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="32" cy="26" r="4" fill="#F5C518" opacity="0.8"/>
+              <path d="M24 44h16" stroke="#F5C518" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>All-Day Dining</h3>
+          <p>Open from 9 AM to 1 AM, we serve breakfast, lunch and dinner — perfect for every occasion throughout the day.</p>
+        </div>
+
+        <div class="feature-card reveal-up delay-2">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="#F5C518" stroke-width="1.5" fill="none"/>
+              <path d="M16 48 C16 36 20 32 32 32 C44 32 48 36 48 48" stroke="#F5C518" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="32" cy="22" r="7" stroke="#F5C518" stroke-width="2"/>
+              <path d="M22 32 C22 28 26 26 32 26" stroke="#F5C518" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Private Dining</h3>
+          <p>Host celebrations, corporate gatherings and special occasions in our exclusive private dining space with personalised service.</p>
+        </div>
+
+        <div class="feature-card reveal-up delay-3">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="#F5C518" stroke-width="1.5" fill="none"/>
+              <path d="M32 16 C32 16 26 20 22 28 C18 36 22 44 32 44 C42 44 46 36 42 28 C38 20 32 16 32 16Z" stroke="#F5C518" stroke-width="2" fill="none" stroke-linejoin="round"/>
+              <path d="M28 32 C28 30 30 28 32 28 C34 28 36 30 36 32 C36 34 34 36 32 36 C30 36 28 34 28 32Z" fill="#F5C518" opacity="0.6"/>
+              <path d="M32 16 L32 12" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M32 12 C32 12 35 10 37 9" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Vegetarian Options</h3>
+          <p>A complete vegetarian menu with Kerala Veg Meals, Veg Biryani, Paneer specialties and fresh seasonal preparations.</p>
+        </div>
+
+        <div class="feature-card reveal-up delay-4">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="#F5C518" stroke-width="1.5" fill="none"/>
+              <rect x="18" y="28" width="28" height="18" rx="3" stroke="#F5C518" stroke-width="2"/>
+              <path d="M24 28 C24 24 28 20 32 20 C36 20 40 24 40 28" stroke="#F5C518" stroke-width="2" fill="none"/>
+              <path d="M29 36 L31 38 L35 34" stroke="#F5C518" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Hygienic & Safe</h3>
+          <p>Prepared in our spotless kitchen using the freshest ingredients, maintaining highest standards of food safety and hygiene.</p>
+        </div>
+
+        <div class="feature-card reveal-up delay-5">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="#F5C518" stroke-width="1.5" fill="none"/>
+              <path d="M20 40 L20 24 L32 18 L44 24 L44 40" stroke="#F5C518" stroke-width="2" stroke-linejoin="round" fill="none"/>
+              <rect x="26" y="32" width="12" height="8" rx="1" stroke="#F5C518" stroke-width="1.5"/>
+              <path d="M28 28 h8 M30 24 h4" stroke="#F5C518" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Home Delivery</h3>
+          <p>Get your favourite Chillies dishes delivered directly to your door. Available on Swiggy and direct order via phone call.</p>
+        </div>
+
+        <div class="feature-card reveal-up delay-6">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="#F5C518" stroke-width="1.5" fill="none"/>
+              <path d="M32 20 L35 26 L42 27 L37 32 L38 39 L32 36 L26 39 L27 32 L22 27 L29 26 Z" stroke="#F5C518" stroke-width="2" fill="none" stroke-linejoin="round"/>
+              <path d="M20 46 Q32 42 44 46" stroke="#F5C518" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Guest Favourite</h3>
+          <div class="feature-rating-badge">Rated 4.5★ &nbsp;·&nbsp; 7,500+ Reviews</div>
+          <p>Consistently recognised as Perinthalmanna's most loved restaurant on Google and food platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MENU SHOWCASE ═══════════ -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Our Cuisine</div>
+        <h2 class="section-title">Crafted With <em>Passion & Spice</em></h2>
+        <p class="section-subtitle">From the depths of Kerala kitchens to the heights of North Indian cuisine — our menu is a celebration of flavour.</p>
+      </div>
+
+      <div class="menu-tabs reveal-up" role="tablist">
+        <button class="menu-tab active" data-tab="kerala" role="tab" id="tab-kerala">Kerala Specials</button>
+        <button class="menu-tab" data-tab="grills" role="tab" id="tab-grills">Grills & Starters</button>
+        <button class="menu-tab" data-tab="biryani" role="tab" id="tab-biryani">Biryani</button>
+        <button class="menu-tab" data-tab="chinese" role="tab" id="tab-chinese">Chinese</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel active" id="panel-kerala">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img" style="background-image: url('images/kerala_meal.png')"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge veg">Veg</span>
+                <h4>Kerala Meals</h4>
+                <p>Traditional Kerala sadhya on banana leaf with rice, sambar, rasam, curries and payasam</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🌿 Authentic</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img" style="background-image: url('images/seafood.png')"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Fish Pollichathu</h4>
+                <p>Whole fish marinated in Kerala masala, wrapped in banana leaf and slow-roasted to perfection</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🔥 Chef's Special</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Chatti Choru" data-color="#3d2b1f"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Chatti Choru</h4>
+                <p>Traditional Kerala soul food — rice and curries served in a clay pot with naadan flavours</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🏺 Signature</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Paal Kappa" data-color="#2b3a2b"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge veg">Veg</span>
+                <h4>Paal Kappa</h4>
+                <p>Classic Kerala tapioca cooked in coconut milk — creamy, comforting and deeply traditional</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🥥 Kerala Classic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-grills">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img" style="background-image: url('images/grilled.png')"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Broasted Chicken</h4>
+                <p>Signature crispy broasted chicken with a golden crunch outside, juicy and tender inside</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">⭐ Most Popular</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img" style="background-image: url('images/starters.png')"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Honey Chilli Wings</h4>
+                <p>Crispy chicken wings tossed in a sweet-spicy honey chilli glaze with sesame and spring onion</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🍯 Must Try</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Chicken Nirvana" data-color="#3a1f1f"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Chicken Nirvana</h4>
+                <p>Exclusive Chillies signature preparation — a rich, aromatic chicken dish you can't find anywhere else</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🌟 Exclusive</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Tandoori Mixed" data-color="#2a1f12"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Tandoori Mixed Platter</h4>
+                <p>Assortment of tandoori chicken, seekh kebab and malai tikka — a feast from the clay oven</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🔥 Grill Special</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-biryani">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img" style="background-image: url('images/biryani.png')"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Chicken Biryani</h4>
+                <p>Fragrant basmati rice layered with spiced chicken, fried onions, mint and saffron</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">⭐ Best Seller</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Kunjikkozhi Biryani" data-color="#3a2d12"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Kunjikkozhi Biryani</h4>
+                <p>Kerala-style baby chicken biryani — a rare delicacy with whole young chicken and Malabar spices</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🏆 Signature</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Prawns Biryani" data-color="#2a3020"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Prawns Biryani</h4>
+                <p>Plump coastal prawns layered in aromatic Malabar-spiced rice with caramelized onions</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🦐 Seafood Pick</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Veg Biryani" data-color="#1f2e1f"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge veg">Veg</span>
+                <h4>Veg Biryani</h4>
+                <p>Garden-fresh vegetables layered in fragrant basmati with whole spices, nuts and saffron</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🌿 Veg Favourite</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-chinese">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img" style="background-image: url('images/starters.png')"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Dragon Chicken</h4>
+                <p>Crispy fried chicken strips tossed in fiery dragon sauce with bell peppers and onion</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🐉 Crowd Pleaser</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Chicken Lollipop" data-color="#2a1a1a"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Chicken Lollipop</h4>
+                <p>Frenched chicken lollipops marinated in Indo-Chinese spices, deep-fried golden crisp</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🍗 Starter Fave</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Manchurian" data-color="#1a2a1a"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge veg">Veg</span>
+                <h4>Gobi Manchurian</h4>
+                <p>Crispy cauliflower florets in tangy Manchurian sauce — the ultimate Indo-Chinese classic</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🥦 Veg Special</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img menu-card-img-placeholder" data-label="Fried Rice" data-color="#1e2a18"></div>
+              <div class="menu-card-body">
+                <span class="menu-badge nonveg">Non-Veg</span>
+                <h4>Mixed Fried Rice</h4>
+                <p>Wok-tossed fried rice with egg, chicken, vegetables and aromatic sauces — perfectly seasoned</p>
+                <div class="menu-card-footer">
+                  <span class="menu-tag">🍳 Combo Pick</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY ═══════════ -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Visual Feast</div>
+        <h2 class="section-title">A Glimpse Into <em>Our World</em></h2>
+        <p class="section-subtitle">Every dish, a masterpiece. Every visit, a memory.</p>
+      </div>
+
+      <div class="gallery-masonry reveal-up">
+        <div class="gallery-item tall">
+          <img src="images/hero.png" alt="Chillies cuisine spread" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span>Our Signature Spread</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/biryani.png" alt="Kerala Biryani" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span>Kerala Biryani</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/grilled.png" alt="Broasted Chicken" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span>Broasted Chicken</span>
+          </div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="images/starters.png" alt="Starters Platter" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span>Starters Platter</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/kerala_meal.png" alt="Kerala Meals" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span>Kerala Sadhya</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/seafood.png" alt="Kerala Seafood" loading="lazy"/>
+          <div class="gallery-overlay">
+            <span>Fish Pollichathu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-cta reveal-up">
+        <a href="https://www.instagram.com/explore/locations/256950302/hotel-chillies-perinthalmanna/" target="_blank" rel="noopener" class="btn-outline" id="gallery-instagram-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          See More on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Guest Reviews</div>
+        <h2 class="section-title">What Our Guests <em>Say</em></h2>
+      </div>
+
+      <div class="testimonials-track-wrap">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"The Broasted Chicken here is absolutely legendary. Nothing comes close in all of Malappuram. The ambiance is premium and service is top-notch."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <strong>Arun Krishnan</strong>
+                <span>Perinthalmanna</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Chatti Choru served in a clay pot — pure nostalgia! Chillies has perfected the art of traditional Kerala cooking while keeping the atmosphere modern and elegant."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">F</div>
+              <div>
+                <strong>Fathima Noor</strong>
+                <span>Manjeri</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"We celebrated our anniversary here and the experience was unforgettable. The food, the ambiance, the service — everything was 10/10. Will definitely return!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div>
+                <strong>Rahul & Priya</strong>
+                <span>Palakkad</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★☆</div>
+            <p>"The biryani here is exceptional — packed with flavour and generous portions. Kunjikkozhi Biryani is a must-try. Best value restaurant on Ooty Road!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>Mohammed Shafeeq</strong>
+                <span>Tirur</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Fish Pollichathu wrapped in banana leaf — absolutely divine! The restaurant has a great variety for both veg and non-veg lovers. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <strong>Sreeja Menon</strong>
+                <span>Kozhikode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-nav">
+        <button class="testimonial-prev" id="testimonial-prev" aria-label="Previous">‹</button>
+        <div class="testimonials-dots" id="testimonials-dots"></div>
+        <button class="testimonial-next" id="testimonial-next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ RESERVATION ═══════════ -->
+  <section id="reserve" class="section reserve-section">
+    <div class="container">
+      <div class="reserve-grid">
+        <div class="reserve-content reveal-left">
+          <div class="section-label">Book a Table</div>
+          <h2 class="section-title">Reserve Your <em>Experience</em></h2>
+          <p>Secure your spot at Chillies — for a romantic dinner, family celebration, or a business lunch. We'll be ready to make it memorable.</p>
+          <div class="reserve-info-list">
+            <div class="reserve-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              <span>Open daily: <strong>9:00 AM – 1:00 AM</strong></span>
+            </div>
+            <div class="reserve-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 .18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z" transform="translate(1,1)"/></svg>
+              <span>Reservations: <strong>+91 75948 88802</strong></span>
+            </div>
+            <div class="reserve-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ooty Road, Manathumangalam Bypass, Perinthalmanna</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reserve-form-wrap reveal-right">
+          <form class="reserve-form" id="reserve-form" onsubmit="handleReservation(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reserve-name">Full Name</label>
+                <input type="text" id="reserve-name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="reserve-phone">Phone Number</label>
+                <input type="tel" id="reserve-phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reserve-date">Date</label>
+                <input type="date" id="reserve-date" required />
+              </div>
+              <div class="form-group">
+                <label for="reserve-time">Preferred Time</label>
+                <select id="reserve-time" required>
+                  <option value="">Select Time</option>
+                  <option>9:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>6:00 PM</option>
+                  <option>7:00 PM</option>
+                  <option>8:00 PM</option>
+                  <option>9:00 PM</option>
+                  <option>10:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reserve-guests">Number of Guests</label>
+                <select id="reserve-guests" required>
+                  <option value="">Select Guests</option>
+                  <option>1-2 Guests</option>
+                  <option>3-4 Guests</option>
+                  <option>5-6 Guests</option>
+                  <option>7-10 Guests</option>
+                  <option>10+ Guests (Private Dining)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="reserve-occasion">Occasion (Optional)</label>
+                <select id="reserve-occasion">
+                  <option value="">Select Occasion</option>
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Business Lunch</option>
+                  <option>Family Get-together</option>
+                  <option>Casual Dining</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-group--notes">
+              <label for="reserve-notes">Special Requests</label>
+              <textarea id="reserve-notes" rows="3" placeholder="Dietary requirements, seating preferences..."></textarea>
+            </div>
+            <div class="form-submit-wrap">
+              <button type="submit" class="btn-primary full-width" id="reserve-submit-btn">
+                Confirm Reservation
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </form>
+          <div class="reserve-success" id="reserve-success" style="display:none">
+            <div class="success-icon">✓</div>
+            <h3>Reservation Received!</h3>
+            <p>Thank you! We'll confirm your table via call shortly. For immediate confirmation, call us at <a href="tel:+917594888802">+91 75948 88802</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT / MAP ═══════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Connect With <em>Chillies</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Cards -->
+        <div class="contact-info reveal-left">
+          <a href="tel:+917594888802" class="contact-card" id="contact-call-btn">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 .18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z" transform="translate(1,1)"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <span>Call Us</span>
+              <strong>+91 75948 88802</strong>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <a href="mailto:hotelchilies@gmail.com" class="contact-card" id="contact-email-btn">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <span>Email Us</span>
+              <strong>hotelchilies@gmail.com</strong>
+            </div>
+            <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <div class="contact-card no-link">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <span>Find Us</span>
+              <strong>Ooty Road, Manathumangalam Bypass, Perinthalmanna, Kerala 679322</strong>
+            </div>
+          </div>
+
+          <div class="contact-card no-link">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <span>Hours</span>
+              <strong>Daily: 9:00 AM – 1:00 AM</strong>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <span class="social-label">Follow Us</span>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/explore/locations/256950302/hotel-chillies-perinthalmanna/" target="_blank" rel="noopener" class="social-icon" id="social-instagram" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-icon" id="social-facebook" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="https://www.swiggy.com" target="_blank" rel="noopener" class="social-icon" id="social-swiggy" aria-label="Swiggy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12 C8 9 10 7 12 7 C14 7 16 9 16 12 C16 16 12 18 12 18 C12 18 8 16 8 12Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map reveal-right">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.245!2d76.2!3d10.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cde39e25a4d5%3A0x6b33d3c2f2e9ad87!2sHotel%20Chilies%2C%20Ooty%20Road%2C%20Perinthalmanna!5e0!3m2!1sen!2sin!4v1&q=Hotel+Chillies+Perinthalmanna&zoom=15"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Chillies Restaurant Location Map"
+            ></iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Hotel+Chillies+Perinthalmanna+Ooty+Road" target="_blank" rel="noopener" class="btn-outline map-directions-btn" id="map-directions-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 72 52" fill="none" xmlns="http://www.w3.org/2000/svg" height="40" style="width:auto">
+              <circle cx="36" cy="26" r="23" stroke="#F5C518" stroke-width="3"/>
+              <path d="M6 26 C10 20 18 18 28 20 L52 22 C58 22.5 63 24 65 26 C63 28 58 29.5 52 30 L28 32 C18 34 10 32 6 26Z" fill="#F5C518"/>
+              <path d="M65 26 C68 25 70 24 70 22 C70 20 68 19 66 20" stroke="#F5C518" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M6 26 C4 24 2 22 3 20" stroke="#F5C518" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <text x="36" y="30" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="9.5" fill="#0b0f1a" letter-spacing="0.5">Chilies</text>
+            </svg>
+            <div>
+              <span class="footer-logo-name">CHILLIES</span>
+              <span class="footer-logo-sub">Perinthalmanna, Kerala</span>
+            </div>
+          </div>
+          <p class="footer-tagline">All-day fine dining where authentic Kerala flavours meet multi-cuisine excellence. Experience the warmth, taste the tradition.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Cuisines</h4>
+          <ul>
+            <li><a href="#menu">Kerala Delicacies</a></li>
+            <li><a href="#menu">Biryani & Rice</a></li>
+            <li><a href="#menu">Grills & Tandoor</a></li>
+            <li><a href="#menu">Indo-Chinese</a></li>
+            <li><a href="#menu">Arabian Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li><a href="tel:+917594888802">+91 75948 88802</a></li>
+            <li><a href="mailto:hotelchilies@gmail.com">hotelchilies@gmail.com</a></li>
+            <li>Ooty Road, Manathumangalam Bypass, Perinthalmanna, Malappuram, Kerala 679322</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Chillies Restaurant. All rights reserved. | Perinthalmanna, Kerala</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/explore/locations/256950302/hotel-chillies-perinthalmanna/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Builder credit -->
+      <div class="footer-credit">
+        <a href="https://www.instagram.com/ashfaaqmhd" target="_blank" rel="noopener" class="footer-credit-link" aria-label="Made by Ashfaaq — visit Instagram">
+          <span class="footer-credit-text">
+            Made by <strong>Ashfaaq</strong>
+          </span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call Button (Mobile) -->
+  <a href="tel:+917594888802" class="fab-call" id="fab-call-btn" aria-label="Call Chillies Restaurant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 .18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z" transform="translate(1,1)"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
